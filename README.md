@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
-A page designed using angular animations version 7. It can easily be integrated and is pretty understandable for animation beginners with angular.
+A page designed using angular animations version 7. It can easily be integrated and is pretty understandable for anyone working with angular / animations.
 
 ## Development server
 Demo: https://hidden-bastion-75751.herokuapp.com/
