@@ -1,0 +1,40 @@
+:host {
+    .process-component {
+        position: relative;
+        img {
+            position: relative;
+            width: 100%;
+        }
+        h1 {
+            font-family: 'Helvetica-Bold';
+            font-size: calc(30px + (70 - 30) * ((100vw - 300px) / (1600 - 300)));
+            color: #fff;
+            opacity: 0.4;
+            bottom: 50px;
+            position: absolute;
+            z-index: 9;
+            right: 0;
+            width: 40%;
+            @media(max-width: 767px) {
+                width: 50%;
+            }
+        }
+
+        .content {
+            width: 65%;
+            @media(max-width: 767px) {
+                width: 80%;
+            }
+            position: absolute;
+            right: 30px;
+            background: #3f4c65;
+            color: #fff;
+            padding: 60px 30px 30px 30px;
+            margin-top: -80px;
+            @media(max-width: 768px) {
+                margin-top: -75px;
+            }
+            margin-bottom: 50px;
+        }
+    }
+}

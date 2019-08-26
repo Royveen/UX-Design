@@ -1,0 +1,13 @@
+:host {
+    .header-mod {
+        margin-bottom: 100px;
+    }
+
+    .about-mod {
+        margin-bottom: 200px;
+        @media(max-width: 767px) {
+            margin-bottom: 300px;
+        }
+    }
+
+}
