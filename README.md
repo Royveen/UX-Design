@@ -5,10 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 Demo: https://hidden-bastion-75751.herokuapp.com/
 
-Make sure you have latest versions of node and angular-cli installed.
-Clone the Repository,
-Run `npm install`
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Make sure you have latest versions of node and angular-cli installed.
+2. Clone the Repository,
+3. Run `npm install`
+4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
