@@ -9,7 +9,10 @@
 
             .company-logo {
                 position: absolute;
-                width: 100px;
+                width: 145px;
+                @media(max-width: 767px) {
+                    width: 100px;
+                }
                 top: 0;
                 left: calc(15px + (65 - 15) * ((100vw - 300px) / (1600 - 300)));
             }
@@ -19,10 +22,46 @@
             height: calc(95px + (250 - 95) * ((100vw - 300px) / (1600 - 300)));
             background: #ff9600;
             position: relative;
+            
+
+            .bar {
+                list-style: none;
+                position: absolute;
+                margin-top: calc(-50px + (-50 - (-30)) * ((100vw - 300px) / (1600 - 300)));
+              
+              & >li {
+                position: relative;
+              
+                &:before {
+                    content: '\25CF';
+                    margin-right: 10px;
+                    font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    content: '';
+                    border-left: 2px solid #fff;
+                    margin-left: 5px;
+                    height: 100%;
+                    z-index: 1;
+                }
+                &:first-of-type:after {
+                    top: 50%;
+                }
+                &:last-of-type:after {
+                    top: -50%;
+                }
+            }
+        }
 
             .percent-border {
                 border-left: 3px solid #ff9600;
-                height: calc(80px + (140 - 80) * ((100vw - 300px) / (1600 - 300)));
+                height: calc(85px + (140 - 85) * ((100vw - 300px) / (1600 - 300)));
                 position: absolute;
                 right: calc(22px + (0 - 22) * ((100vw - 300px) / (1600 - 300)));
                 top: calc(25px + (120 - 25) * ((100vw - 300px) / (1600 - 300)));

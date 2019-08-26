@@ -5,18 +5,25 @@
     
   </div>
   <div class="updraft-logo">
+      <ul class="bar">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
     <div class="title-part">
       <h1>UPDRAFT</h1>
       <h5>PALE ALE</h5>
       <div class="percent-border">
       </div>
-      <div class="percent-number">
+      <div class="percent-number" [@percentAnimate]="percentState">
         <span>5%</span>
       </div>
     </div>
     <div class="updraft-images">
         <img class="hopandbarley-logo" src="assets/Images/images/hopAndBarley.png" alt="">
-        <img class="labeldesign-logo" src="assets/Images/images/Label Design copy.png" alt="">
+        <img class="labeldesign-logo" src="assets/Images/images/Label Design copy.png" alt="" [@beerAnimate]="beerState">
     </div>
   </div>
 </div>
